@@ -1,0 +1,75 @@
+body, li, ul , button{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: sans-serif
+}
+/* font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ----head---- */
+
+header{
+    margin-left: 110px;
+    margin-right: 110px;
+    font-family: 'Nanum Gothic', sans-serif
+}
+
+.head_top nav a{
+    text-decoration: none;
+    margin-left: 5px;
+}
+.head_top nav{
+    margin-left: 1236px;
+    padding-top: 5px;
+    height: 50px;
+}
+.head_top{
+    
+}
+
+
+.head_bottom{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 100px;
+    font-size: 15px;
+}
+
+.head_bottom nav{
+    margin-left: 0;
+}
+
+.menu{
+    /*ul*/
+    display: flex;
+}
+
+.menu li{
+}
+
+.menu li a{
+    padding: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.head_bottom #quote_button{
+    padding: 25px;
+    border: solid 1px green ;
+    background-color: transparent;
+}
+
+/*----head_end----*/
+
+/*----Body----*/
+.container{
+    /* margin-left: 110px;
+    margin-right: 110px; */
+    font-family: 'Roboto', sans-serif;
+}
+
+/*----Body_end----*/
