@@ -17,38 +17,40 @@ header{
     font-family: 'Nanum Gothic', sans-serif
 }
 
+.head_top{
+    height: 50px;
+}
+
+.head_top nav{
+    float: right;
+    padding-top: 5px;
+}
+
 .head_top nav a{
     text-decoration: none;
     margin-left: 5px;
 }
-.head_top nav{
-    margin-left: 1236px;
-    padding-top: 5px;
-    height: 50px;
-}
-.head_top{
-    
-}
+
+
 
 
 .head_bottom{
     align-items: center;
-    justify-content: space-between;
-    display: flex;
     height: 100px;
     font-size: 15px;
+    background-color: brown;
 }
 
 .head_bottom nav{
-    margin-left: 0;
 }
 
 .menu{
     /*ul*/
-    display: flex;
+    float: right;
 }
 
 .menu li{
+    display: inline-block;
 }
 
 .menu li a{
@@ -58,9 +60,19 @@ header{
 }
 
 .head_bottom #quote_button{
-    padding: 25px;
+    padding: 20px;
     border: solid 1px green ;
     background-color: transparent;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
 /*----head_end----*/
