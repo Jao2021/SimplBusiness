@@ -6,8 +6,6 @@ body, li, ul , button{
 }
 /* font-family: 'Nanum Gothic', sans-serif;
 font-family: 'Roboto', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* ----head---- */
 
@@ -70,7 +68,7 @@ nav img{
 .head_bottom #quote_button{
     margin-left: 80px;
     padding: 20px;
-    border: solid 1px green ;
+    border: solid 1px #3447A3;
     background-color: transparent;
 }
 
@@ -152,7 +150,7 @@ nav img{
     overflow: hidden;
     
 }
-
+    /*----Carousel----*/
 .container img{
     width: 1700px;
 }
@@ -174,5 +172,57 @@ nav img{
     70%{margin-left: -3400px;}
 
 }
+    /*----Carousel_end----*/
 
+.main{
+    text-align: center;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 50px;
+}
+
+.main .title{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 40px;
+    color: #322C3D;
+
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+section{
+    height: 300px;
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    padding-top: 0px ;
+    margin: 5px;
+}
+.card h3{
+    font-family: 'Nanum Gothic', sans-serif;    
+    color: #322C3D;
+}
+
+
+.card img{
+    width: 64px;
+    height: 64px;
+}
+
+.card .text_icon{
+    height: 152px;
+}
+
+
+.card button{
+    padding: 0.5rem 1rem;
+    margin-top: 10px;
+}
 /*----Body_end----*/
