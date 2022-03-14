@@ -8,86 +8,9 @@ body, li, ul , button{
 font-family: 'Roboto', sans-serif; */
 
 /* ----head---- */
-
-header{
-    margin-left: 110px;
-    margin-right: 110px;
-    font-family: 'Nanum Gothic', sans-serif;
-    
-}
-
-.head_top{
-    height: 50px;
-}
-
-.head_top nav{
-    float: right;
-    padding-top: 5px;
-}
-
-.head_top nav a{
-    text-decoration: none;
-    margin-left: 5px;
-}
-
-
-
-
-.head_bottom{
-   
-    font-size: 15px;
-}
-
-.head_bottom nav{
-    width: 100%;
-    height: 100px;
-}
-
-nav img{
-    margin-top: 20px;
-}
-
-.menu{
-    /*ul*/
-    float: right;
-    margin: 3px;
-}
-
-.menu li{
-    display: inline-block;
-    line-height: 100px;
-}
-
-.menu li a{
-    padding: 7px 28px;
-    color: black;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-.head_bottom #quote_button{
-    margin-left: 80px;
-    padding: 20px;
-    border: solid 1px #3447A3;
-    background-color: transparent;
-}
-
-.checkbtn{
-    font-size: 30px;
-    color: black;
-    float: right;
-    margin: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check{
-    display: none;
-}
-
-@media (max-width: 858px){
+@media (max-width: 1261px){
     header{
-        margin-left: 0px;
+        margin-left: 110px;
         margin-right: 14px;
         font-family: 'Nanum Gothic', sans-serif;
     }
@@ -99,7 +22,7 @@ nav img{
         width: 30%;
         height: 50vh;
         top: 80px;
-        left: -100%;
+        left: -150%;
         right: -70px;
         text-align: center;
         background-color: white;
@@ -126,9 +49,93 @@ nav img{
     #check:checked ~ ul{
         left: 70;
     }
+
+    
 }
 
-@media (max-width: 952px){
+header{
+    margin-left: 110px;
+    margin-right: 110px;
+    font-family: 'Nanum Gothic', sans-serif;
+    
+}
+
+.head_top{
+    height: 50px;
+}
+
+.head_top nav{
+    float: right;
+    padding-top: 5px;
+}
+
+.head_top nav a{
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+
+
+
+.head_bottom{
+   
+    font-size: 15px;
+}
+
+.head_bottom nav{
+    width: 100%;
+    height: 100px;
+}
+
+.head_bottom nav img{
+    margin-top: 20px;
+}
+
+.menu{
+    /*ul*/
+    float: right;
+    margin: 3px;
+    margin-right:0px;
+}
+
+.menu li{
+    display: inline-block;
+    line-height: 100px;
+}
+
+.menu li a{
+    padding: 7px 28px;
+    color: #322C3D;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.head_bottom #quote_button{
+    margin-left: 80px;
+    padding: 20px;
+    font-weight: 700;
+    background-color: #8649D5;
+    color: white;
+    border-radius: 2px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    margin: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+
+/* @media (max-width: 952px){
     nav img{
         font-size: 30px;
         padding-left: 50px;
@@ -137,7 +144,7 @@ nav img{
         font-size: 14px;
     }
 
-}
+} */
 
 /*----head_end----*/
 
@@ -146,8 +153,6 @@ nav img{
     /* margin-left: 110px;
     margin-right: 110px; */
     font-family: 'Roboto', sans-serif;
-    width: 1680px;
-    overflow: hidden;
     
 }
     /*----Carousel----*/
@@ -157,7 +162,7 @@ nav img{
 
 .container ul{
     margin: auto;
-    display: flex;
+    display: none;
     width: 600%;
     animation: slide 24s infinite;
 }
@@ -176,15 +181,16 @@ nav img{
 
 .main{
     text-align: center;
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-top: 50px;
 }
 
-.main .title{
+.services .services_title{
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 40px;
-    color: #322C3D;
+    font-weight: 500;
+    color: black;
 
 }
 
@@ -197,32 +203,336 @@ nav img{
     
 }
 
-section{
-    height: 300px;
-    width: 200px;
-    align-items: center;
-    text-align: center;
-    padding-top: 0px ;
-    margin: 5px;
-}
-.card h3{
-    font-family: 'Nanum Gothic', sans-serif;    
-    color: #322C3D;
+.cards .division{
+    display: flex;
+    flex-direction: column;
 }
 
+.card{
+    height: 290px;
+    width: 260px;
+    align-items: center;
+    text-align: center;
+    padding: 20px ;
+    margin: 25px 30px;
+    box-shadow: 20px 20px 50px -28px #999499;
+    border-radius: 20px;
+    font-size: 16px;
+}
 
 .card img{
     width: 64px;
     height: 64px;
 }
 
+.card h3{
+    font-family: 'Nanum Gothic', sans-serif;    
+    color: #322C3D;
+    margin: 16px 0px;
+}
+
 .card .text_icon{
-    height: 152px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    height: 70px;
+    max-width: 260px;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+
+.card span{
+    font-weight: 500;
+    font-size: 90%;
+}
+.card button{
+    font-family: 'Roboto', sans-serif;
+    background-color: #8649D5;
+    color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+@media (max-width:1261px){
+    
+    .main .services{
+        margin-left: 430px;
+    }
+}
+
+.about{
+    height: 650px;
+    margin-left: 0px;
+    margin-top: 30;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+    /*----blue card----*/
+.about .about_text{
+    text-align: left;
+    height: 78.5%;
+    width: 38%;
+    background-color: #3447A3;
+    color: white;
+    margin: 0px 0px;
+    padding: 70px;
+}
+
+.about .about_text h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.about .about_text h2{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+
+}
+
+.about .about_text h4{
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+    /*----blue card_end----*/
+
+.about img{
+    height: 100%;
+    width: 900px;
+    
+}
+
+.client{
+    margin-bottom: 8%;
+}
+.client .client_text{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: black;
+}
+
+.clientele{
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.clientele .division_client_left{
+    margin-right: 200px;
+}
+
+.clientele .clientele_logo{
+    margin: 10px;
+}
+
+.clientele img{
+    height: 150px;
+    width: 330px;
+    -webkit-filter: grayscale(100%);
+}
+
+.clientele img:hover{
+    -webkit-filter: grayscale(0%);
+    transition: 0.5s;
 }
 
 
-.card button{
-    padding: 0.5rem 1rem;
+/*----Contact_us-----*/
+
+.contact{
+    margin-top: 4%;
+}
+
+.contact .contact_title{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.contact .contact_title a{
+    color: black;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.contact .contact_main{
+    height: 700px;
+    width: 100%;
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3447A3;
+}
+
+.contact_main .contact_left{
+    padding-top: 95px;
+    color: white;
+    padding-left: 130px;
+    height: 60%;
+    width: 50%;
+}
+
+.contact_main .contact_left h1{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.contact_main .contact_left h4{
+    text-align: justify;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 300;
+}
+
+.contact_main .contact_right{
+    padding: 100px;
+    padding-right: 130px;
+    height: 60%;
+    width: 50%;
+}
+
+.contact_right .contact_card{
+    background-color: #3447A3;
+    color: white;
+    padding: 50px;
+    padding-top: 5px;
+    height: 100%;
+    width: 60%;
+}
+
+.contact_right .contact_card h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+form .field{
+    padding-top: 20px;
+}
+
+form .field input{
+    padding: 15px;
+    height: 50px;
+    width: 100%;
+    font-size: 15px;
+    outline: none;
+}
+
+form .field input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+}
+
+form .field textarea{
+    padding: 15px;
+    height: 100px;
+    width: 100%;
+    font-size: 15px;
+    outline: none;
+    resize: vertical;
+}
+
+.field textarea::placeholder{
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+}
+
+.contact_card .button_message{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 25px;
+}
+ .contact_card .button_message button{
+    border: solid 2px white;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+ 
+/*----Contact_us_end-----*/
+
+/*----Body_end----*/
+
+
+/*----Foot----*/
+footer{
+    background-color: black;
+    height: 70%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+footer .foot_left{
+    height: 20%;
+    width: 50%;
+    padding: 100px;
+    padding-left: 110px;
+}
+
+.foot_left .foot_text_left{
+   padding-left: 5px;
+    margin-top: 10%; 
+}
+
+.foot_left .foot_span{
     margin-top: 10px;
 }
-/*----Body_end----*/
+
+footer .foot_right{
+    height: 20%;
+    width: 50%;
+    padding: 100px;
+    padding-right: 110px;
+    padding-bottom: 10px;
+}
+
+.foot_right .foot_menu{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.foot_menu ul{
+    text-align: end;
+}
+
+.foot_right .foot_menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.foot_right .foot_menu a:hover{
+    text-decoration:underline;
+}
+
+.foot_right .foot_menu #foot_text{
+    margin-top: 15px;
+}
+
+.foot_right .foot_social{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.foot_right .foot_social a{
+    margin-left: 15px;
+    margin-top: 50px;
+}
+
+/*----Foot_end----*/

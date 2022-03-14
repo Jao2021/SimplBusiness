@@ -9,22 +9,24 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+        <script defer src="https://use.fontawesome.com/releases/v6.0.0/js/all.js" integrity="sha384-l+HksIGR+lyuyBo1+1zCBSRt6v4yklWu7RbG0Cv+jDLDD9WFcEIwZLHioVB4Wkau" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="head">
             <header>
                 <div class="head_top">
                     <nav>
-                        <a>Facebook</a>
-                        <a>Instagran</a>
-                        <a>You tube</a>
+                        <a href="#"><i class="fa-brands fa-facebook" style="color: black;"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube" style="color: black;"></i></a>
                     </nav>
                 </div>
                 <div class="head_bottom">
                    
                     <nav>
-                        <img src="img/logo.png" alt="logo" width="180" height="60">
+                        <a href="home.html">
+                            <img src="img/logo.png" alt="logo" width="180" height="60">
+                        </a>
                         <input type="checkbox" id="check">
                         <label for="check" class="checkbtn">
                             <i class="fas fa-bars"></i>
@@ -34,8 +36,8 @@
                             <li><a href="">ABOUT</a></li>
                             <li><a href="">PRINTING</a></li>
                             <li><a href="">DESIGNING</a></li>
-                            <li><a href="">CONTACT</a></li>
-                            <li><a id="quote_button">GET A QUOTE</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                            <li><a id="quote_button">Get a Quote</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -48,129 +50,221 @@
                     <li><img src="img/carousel_3.jpg" alt=""></li>
                 </ul>
                 <div class="main">
-                    <a class="title">Our Services</a>
-                    <div class="cards">
-                        <section class="card">
-                            <div class="icon">
-                                <img src="img/printer.png" alt="Printing Solutions">
-                            </div>
-                            <h3>Printing Solutions</h3>
-                            <div class="text_icon">
-                                <span>We are into all</span>
-                            </div>
-                            <button>Know more</button>
-                        </section>
+                    <div class="services">
+                        <a class="services_title">Our Services</a>
+                        <div class="cards">
+                            <div class="division">
+                                <section class="card">
+                                    <div class="icon">
+                                        <img src="img/printer.png" alt="Printing Solutions">
+                                    </div>
+                                    <h3>Printing Solutions</h3>
+                                    <div class="text_icon">
+                                        <span>With researched digital marketing, we will ensure that new 
+                                            customers and clients are able to find your business.
+                                        </span>
+                                    </div>
+                                    <button>Know more</button>
+                                </section>
 
-                        <section class="card">
-                            <div class="icon">
-                                <img src="img/web-design.png" alt="Graphic & Designing">
-                            </div>
-                            <h3>Graphic & Designing</h3>
-                            <div class="text_icon">
-                                <span>Looking out for customized solutions for your websites? 
-                                    Our team will develop and deliver a website that’ll serve 
-                                    your purpose.
-                                </span>
-                            </div>
-                            <button>Know more</button>
-                        </section>
+                                <section class="card">
+                                    <div class="icon">
+                                        <img src="img/web-design.png" alt="Graphic & Designing">
+                                    </div>
+                                    <h3>Graphic & Designing</h3>
+                                    <div class="text_icon">
+                                        <span>Looking out for customized solutions for your websites? 
+                                            Our team will develop and deliver a website that’ll serve 
+                                            your purpose.
+                                        </span>
+                                    </div>
+                                    <button>Know more</button>
+                                </section>
 
-                        <section class="card"> 
-                            <div class="icon">
-                                <img src="img/digital-marketing.png" alt="Digital Marketing">
+                                <section class="card"> 
+                                    <div class="icon">
+                                        <img src="img/digital-marketing.png" alt="Digital Marketing">
+                                    </div>
+                                    <h3>Digital Marketing</h3>
+                                    <div class="text_icon">
+                                        <span>With researched digital marketing, we will ensure that new 
+                                            customers and clients are able to find your business.
+                                        </span>
+                                    </div>
+                                    
+                                    <button>Know more</button>
+                                </section>
                             </div>
-                            <h3>Digital Marketing</h3>
-                            <div class="text_icon">
-                                <span>With researched digital marketing, we will ensure that new 
-                                    customers and clients are able to find your business.
-                                </span>
-                            </div>
-                            
-                            <button>Know more</button>
-                        </section>
-                        <br>
-                        <section class="card"> 
-                            <div class="icon">
-                                <img src="img/package-box.png" alt="Packaging Solution">
-                            </div>
-                            <h3>Packaging Solution</h3>
-                            <div class="text_icon">
-                                <span>Our web design team has ample years of experience in the core 
-                                    areas of design to build a website that you need.
-                              </span>
-                            </div>
-                            <button>Know more</button>
-                        </section>
 
-                        <section class="card"> 
-                            <div class="icon">
-                                <img src="img/photoshop.png" alt="Photoshoot & Videoshoot">
-                            </div>
-                            <h3>Photoshoot & Videoshoot</h3>
-                            <div class="text_icon">
-                                <span>Looking out for customized solutions for your websites? Our 
-                                    team will develop and deliver a website that’ll serve your purpose.
-                                </span>
-                            </div>
-                            <button>Know more</button>
-                        </section>
+                            <div class="division">
+                                <section class="card"> 
+                                    <div class="icon">
+                                        <img src="img/package-box.png" alt="Packaging Solution">
+                                    </div>
+                                    <h3>Packaging Solution</h3>
+                                    <div class="text_icon">
+                                        <span>Our web design team has ample years of experience in the core 
+                                            areas of design to build a website that you need.
+                                        </span>
+                                    </div>
+                                    <button>Know more</button>
+                                </section>
 
-                        <section class="card"> 
-                            <div class="icon">
-                                <img src="img/developer.png" alt="Web & App Developement">
-                            </div>
-                            <h3>Web & App Developement</h3>
-                            <div class="text_icon">
-                                <span>With researched digital marketing, we will ensure that new 
-                                    customers and clients are able to find your business.
-                                </span>
-                            </div>
-                            <button>Know more</button>
-                        </section>                        
+                                <section class="card"> 
+                                    <div class="icon">
+                                        <img src="img/photoshop.png" alt="Photoshoot & Videoshoot">
+                                    </div>
+                                    <h3>Photoshoot & Videoshoot</h3>
+                                    <div class="text_icon">
+                                        <span>Looking out for customized solutions for your websites? Our 
+                                            team will develop and deliver a website that’ll serve your purpose.
+                                        </span>
+                                    </div>
+                                    <button>Know more</button>
+                                </section>
 
-                        <section class="card"> 
-                            <div class="icon">
-                                <img src="img/management.png" alt="Event Management">
+                                <section class="card"> 
+                                    <div class="icon">
+                                        <img src="img/developer.png" alt="Web & App Developement">
+                                    </div>
+                                    <h3>Web & App Developement</h3>
+                                    <div class="text_icon">
+                                        <span>With researched digital marketing, we will ensure that new 
+                                            customers and clients are able to find your business.
+                                        </span>
+                                    </div>
+                                    <button>Know more</button>
+                                </section>                        
                             </div>
-                            <h3>Event Management</h3>
-                            <div class="text_icon">
-                                <span>Our web design team has ample years of experience in the 
-                                    core areas of design to build a website that you need.
-                                </span>
-                            </div>
-                            <button>Know more</button>
-                        </section>
 
-                        <section class="card"> 
-                            <div class="icon">
-                                <img src="img/gift.png" alt="Corporate Gifting">
-                            </div>
-                            <h3>Corporate Gifting</h3>
-                            <div class="text_icon">
-                                <span>Looking out for customized solutions for your websites? Our 
-                                    team will develop and deliver a website that’ll serve your purpose.
-                                </span>
-                            </div>
-                            <button>Know more</button>
-                        </section>
+                            <div class="division">
+                                <section class="card"> 
+                                    <div class="icon">
+                                        <img src="img/management.png" alt="Event Management">
+                                    </div>
+                                    <h3>Event Management</h3>
+                                    <div class="text_icon">
+                                        <span>Our web design team has ample years of experience in the 
+                                            core areas of design to build a website that you need.
+                                        </span>
+                                    </div>
+                                    <button>Know more</button>
+                                </section>
 
-                        <section class="card"> 
-                            <div class="icon">
-                                <img src="img/attach.png" alt="Stationary Supplies">
-                            </div>
-                            <h3>Stationary Supplies</h3>
-                            <div class="text_icon">
-                                <span>With researched digital marketing, we will ensure that new 
-                                    customers and clients are able to find your business.
-                                </span>
-                            </div>
-                            <button>Know more</button>
-                        </section>
-                        
+                                <section class="card"> 
+                                    <div class="icon">
+                                        <img src="img/gift.png" alt="Corporate Gifting">
+                                    </div>
+                                    <h3>Corporate Gifting</h3>
+                                    <div class="text_icon">
+                                        <span>Looking out for customized solutions for your websites? Our 
+                                            team will develop and deliver a website that’ll serve your purpose.
+                                        </span>
+                                    </div>
+                                    <button>Know more</button>
+                                </section>
+
+                                <section class="card"> 
+                                    <div class="icon">
+                                        <img src="img/attach.png" alt="Stationary Supplies">
+                                    </div>
+                                    <h3>Stationary Supplies</h3>
+                                    <div class="text_icon">
+                                        <span>With researched digital marketing, we will ensure that new 
+                                            customers and clients are able to find your business.
+                                        </span>
+                                    </div>
+                                    <button>Know more</button>
+                                </section>
+                            </div>  
+                        </div>
                     </div>
-                    <h3>df</h3>
+                    <div class="about">
+                        <div class="about_text">
+                            <h1>About Us</h1>
+                            <h4>We are a team of 40 web experts with over 12 years of experience 
+                                in website building and marketing to help businesses grow online.
+                            </h4>
+                            <h2>Mission</h2>
+                            <h4>Our mission is to empower our clients to use the internet to its 
+                                full potential by providing affordable, effective, custom design 
+                                and marketing solutions.
+                            </h4>
+                            <h2>Vision</h2>
+                            <h4>Our vision is to become a global leader in providing the best and 
+                                unique web design and marketing services to improve our client’s 
+                                productivity and business strength.
+                            </h4>
+                        </div>
+                        <img src="img/about us.jpg" alt="about us">
+                    </div>
+                    <div class="client">
+                        <a class="client_text">Our Clients</a>
+
+                        <div class="clientele">
+                            <div class="division_client_left">
+                                <div class="clientele_logo">
+                                    <a href=""> <img src="img/logo_client/Inframandi.png"> </a>
+                                </div>
+                                <div class="clientele_logo">
+                                    <a href=""> <img src="img/logo_client/Livedtrip.png" alt=""> </a>
+                                </div>
+                            </div>
+
+                            <div class="division_client right">
+                                <div class="clientele_logo">
+                                    <a href=""> <img src="img/logo_client/Rony Enterprise.png" alt=""> </a>
+                                </div>
+                                <div class="clientele_logo">
+                                    <a href=""> <img src="img/logo_client/Speaking Mirror.png" alt=""> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        
+        <div class="foot">
+            <footer>
+                <div class="foot_left">
+                    <div class="foot_img">
+                        <img src="img/logo_invert.jpeg" alt="">
+                    </div>
+                    <div class="foot_text_left">
+                        <div class="foot_span">
+                            <span>132, Keshab Chandra Sen Street Near Amhesrt Street Police Station</span>
+                        </div>
+                        <div class="foot_span">
+                            <span>Kolkata – 700 009</span><br>
+                        </div>
+                        <div class="foot_span">
+                            <span>simplbusinessideas@gmail.com</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="foot_right">
+                    <div></div>
+                    <div>
+                        <div class="foot_menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="home.html">HOME</a></li>
+                                    <li id="foot_text"><a href="">ABOUT</a></li>
+                                    <li id="foot_text"><a href="">PRINTING</a></li>
+                                    <li id="foot_text"><a href="">DESIGNING</a></li>
+                                    <li id="foot_text"><a href="contact.html">CONTACT</a></li>
+                                    <li id="foot_text"><a href="">Get a Quote</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="foot_social">
+                            <a href="#"><i class="fa-brands fa-facebook" style="color: white;"></i></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram" style="color: white;"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube" style="color: white;"></i></a>
+                        </div>
+                    </div>  
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
