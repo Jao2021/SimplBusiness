@@ -5,24 +5,26 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
         <script defer src="https://use.fontawesome.com/releases/v6.0.0/js/all.js" integrity="sha384-l+HksIGR+lyuyBo1+1zCBSRt6v4yklWu7RbG0Cv+jDLDD9WFcEIwZLHioVB4Wkau" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="head">
             <header>
                 <div class="head_top">
-                    <nav>
+                    <nav class="top-left">
+                        <a href="#" id="head_icon"><i class="fa-solid fa-phone-volume"></i> +2 (202) 588-6500</a>
+                        <a href="#" style="padding-left: 30px;"><i class="fa-thin fa-envelope-open"></i>simplbusinessideas@gmail.com</a>
+                    </nav>
+                    <nav class="top-right">
                         <a href="#"><i class="fa-brands fa-facebook" style="color: black;"></i></i></a>
                         <a href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
                         <a href="#"><i class="fa-brands fa-youtube" style="color: black;"></i></a>
                     </nav>
                 </div>
                 <div class="head_bottom">
-                   
+                
                     <nav>
                         <a href="home.html">
                             <img src="img/logo.png" alt="logo" width="180" height="60">
@@ -32,154 +34,118 @@
                             <i class="fas fa-bars"></i>
                         </label> 
                         <ul class="menu">
-                            <li><a href="home.html">HOME</a></li>
-                            <li><a href="">ABOUT</a></li>
-                            <li><a href="">PRINTING</a></li>
-                            <li><a href="">DESIGNING</a></li>
-                            <li><a href="contact.html">CONTACT</a></li>
-                            <li><a id="quote_button">Get a Quote</a></li>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="printing.html">Printing</a></li>
+                            <li><a href="designing.html">Designing</a></li>
+                            <li><a href="designing.html">Project</a></li>
+                            <li><a href="contact.html">Conctact</a></li>
+                            <li><a id="quote_button">GET A QUOTE</a></li>
                         </ul>
                     </nav>
                 </div>
             </header>
         </div>    
             <div class="container">
-                <ul class="slider">
-                    <li><img src="img/carousel_1.jpg" alt=""></li>
-                    <li><img src="img/carousel_2.jpg" alt=""></li>
-                    <li><img src="img/carousel_3.jpg" alt=""></li>
-                </ul>
-                <div class="main">
+                <div class="slide-main">
+                    <div class="slider">
+                        <div class="slides">
+                            <input type="radio" class="ball" name="radio-btn" id="radio1" checked>
+                            <input type="radio" class="ball" name="radio-btn" id="radio2">
+                            <input type="radio" class="ball" name="radio-btn" id="radio3">
+                            <input type="radio" class="ball" name="radio-btn" id="radio4">   
+                            
+                            <div class="slide one">
+                                <img src="img/One Stop Printing Solution.png" alt="">
+                            </div>
+                            <div class="slide two">
+                                <img src="img/One Stop Printing Solution 2.png" alt="">
+                            </div>
+                            <div class="slide three">
+                                <img src="img/One Stop Printing Solution.png" alt="">
+                            </div>
+                            <div class="slide four">
+                                <img src="img/One Stop Printing Solution 2.png" alt="">
+                            </div>
+
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                                <div class="auto-btn4"></div>
+                            </div>
+                        </div>
+
+                        <div class="navigation-bar">
+                            <label class= "manual-btn" for="radio1"  checked></label>
+                            <label class= "manual-btn" for="radio2"></label>
+                            <label class= "manual-btn" for="radio3"></label>
+                            <label class= "manual-btn" for="radio4"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-home">
                     <div class="services">
-                        <a class="services_title">Our Services</a>
+                        <h4 class="sub-title">Our Services</h4>
+                        <h2 class="services_title">Designing Services</h2>
                         <div class="cards">
-                            <div class="division">
-                                <section class="card">
-                                    <div class="icon">
-                                        <img src="img/printer.png" alt="Printing Solutions">
-                                    </div>
-                                    <h3>Printing Solutions</h3>
-                                    <div class="text_icon">
-                                        <span>With researched digital marketing, we will ensure that new 
-                                            customers and clients are able to find your business.
-                                        </span>
-                                    </div>
-                                    <button>Know more</button>
-                                </section>
+                            
 
-                                <section class="card">
-                                    <div class="icon">
-                                        <img src="img/web-design.png" alt="Graphic & Designing">
-                                    </div>
-                                    <h3>Graphic & Designing</h3>
-                                    <div class="text_icon">
-                                        <span>Looking out for customized solutions for your websites? 
-                                            Our team will develop and deliver a website that’ll serve 
-                                            your purpose.
-                                        </span>
-                                    </div>
-                                    <button>Know more</button>
-                                </section>
+                            <section class="card">
+                                <div class="icon-one">
+                                    <img src="img/graphic-tablet.png">
+                                </div>
+                                <h4>Graphic & Designing</h4>
+                                <div class="text_icon">
+                                    <span>Looking out for customized solutions for your websites? 
+                                        Our team will develop and deliver a website that’ll serve 
+                                        your purpose.
+                                    </span>
+                                </div>
+                                
+                            </section>
+                    
+                            <section class="card"> 
+                                <div class="icon-two">
+                                    <img src="img/megaphone.png">
+                                </div>
+                                <h4>Digital Marketing</h4>
+                                <div class="text_icon">
+                                    <span>With researched digital marketing, we will ensure that new 
+                                        customers and clients are able to find your business.
+                                    </span>
+                                </div>
+                            </section>
 
-                                <section class="card"> 
-                                    <div class="icon">
-                                        <img src="img/digital-marketing.png" alt="Digital Marketing">
-                                    </div>
-                                    <h3>Digital Marketing</h3>
-                                    <div class="text_icon">
-                                        <span>With researched digital marketing, we will ensure that new 
-                                            customers and clients are able to find your business.
-                                        </span>
-                                    </div>
-                                    
-                                    <button>Know more</button>
-                                </section>
-                            </div>
+                            <section class="card"> 
+                                <div class="icon-three">
+                                    <img src="img/package.png">
+                                </div>
+                                <h4>Packaging Solution</h4>
+                                <div class="text_icon ">
+                                    <span>Our web design team has ample years of experience in the core 
+                                        areas of design to build a website that you need.
+                                    </span>
+                                </div>
+                                
+                            </section>
 
-                            <div class="division">
-                                <section class="card"> 
-                                    <div class="icon">
-                                        <img src="img/package-box.png" alt="Packaging Solution">
-                                    </div>
-                                    <h3>Packaging Solution</h3>
-                                    <div class="text_icon">
-                                        <span>Our web design team has ample years of experience in the core 
-                                            areas of design to build a website that you need.
-                                        </span>
-                                    </div>
-                                    <button>Know more</button>
-                                </section>
-
-                                <section class="card"> 
-                                    <div class="icon">
-                                        <img src="img/photoshop.png" alt="Photoshoot & Videoshoot">
-                                    </div>
-                                    <h3>Photoshoot & Videoshoot</h3>
-                                    <div class="text_icon">
-                                        <span>Looking out for customized solutions for your websites? Our 
-                                            team will develop and deliver a website that’ll serve your purpose.
-                                        </span>
-                                    </div>
-                                    <button>Know more</button>
-                                </section>
-
-                                <section class="card"> 
-                                    <div class="icon">
-                                        <img src="img/developer.png" alt="Web & App Developement">
-                                    </div>
-                                    <h3>Web & App Developement</h3>
-                                    <div class="text_icon">
-                                        <span>With researched digital marketing, we will ensure that new 
-                                            customers and clients are able to find your business.
-                                        </span>
-                                    </div>
-                                    <button>Know more</button>
-                                </section>                        
-                            </div>
-
-                            <div class="division">
-                                <section class="card"> 
-                                    <div class="icon">
-                                        <img src="img/management.png" alt="Event Management">
-                                    </div>
-                                    <h3>Event Management</h3>
-                                    <div class="text_icon">
-                                        <span>Our web design team has ample years of experience in the 
-                                            core areas of design to build a website that you need.
-                                        </span>
-                                    </div>
-                                    <button>Know more</button>
-                                </section>
-
-                                <section class="card"> 
-                                    <div class="icon">
-                                        <img src="img/gift.png" alt="Corporate Gifting">
-                                    </div>
-                                    <h3>Corporate Gifting</h3>
-                                    <div class="text_icon">
-                                        <span>Looking out for customized solutions for your websites? Our 
-                                            team will develop and deliver a website that’ll serve your purpose.
-                                        </span>
-                                    </div>
-                                    <button>Know more</button>
-                                </section>
-
-                                <section class="card"> 
-                                    <div class="icon">
-                                        <img src="img/attach.png" alt="Stationary Supplies">
-                                    </div>
-                                    <h3>Stationary Supplies</h3>
-                                    <div class="text_icon">
-                                        <span>With researched digital marketing, we will ensure that new 
-                                            customers and clients are able to find your business.
-                                        </span>
-                                    </div>
-                                    <button>Know more</button>
-                                </section>
-                            </div>  
+                            <section class="card"> 
+                                <div class="icon-four">
+                                    <img src="img/coding.png">
+                                </div>
+                                <h4>Web & App Developement</h4>
+                                <div class="text_icon ">
+                                    <span>With researched digital marketing, we will ensure that new 
+                                        customers and clients are able to find your business.
+                                    </span>
+                                </div>
+                            </section>        
                         </div>
                     </div>
                     <div class="about">
+                        <img src="img/about-bg.png" alt="about us">
                         <div class="about_text">
                             <h1>About Us</h1>
                             <h4>We are a team of 40 web experts with over 12 years of experience 
@@ -195,32 +161,229 @@
                                 unique web design and marketing services to improve our client’s 
                                 productivity and business strength.
                             </h4>
+                            <div class="about_button">
+                                <div class="about_icon"><i class="fa-solid fa-arrow-right"></div></i><a href="#">READ MORE</a>
+                            </div>
                         </div>
-                        <img src="img/about us.jpg" alt="about us">
+                        
                     </div>
+                    <div class="services_second">
+                        <h4 class="sub-title">Our Services</h4>
+                        <h2 class="services_title">Printing Services</h2>
+                        <div class="cards_second">
+
+                            <div class="division">
+                                <section class="card">
+                                    <div class="icon-five">
+                                        <img src="img/printer.png">
+                                    </div>
+                                    
+                                    <div class="text_icon">
+                                        <h4>Printing Solutions</h4>
+                                        <span>With researched digital marketing, we will ensure that new 
+                                            customers and clients are able to find your business.
+                                        </span>
+                                    </div>
+                                </section>
+    
+                                <section class="card"> 
+                                    <div class="icon-six">
+                                        <img src="img/crop.png">
+                                    </div>
+                                    
+                                    <div class="text_icon ">
+                                        <h4>Photoshoot & Videoshoot</h4>
+                                        <span>Looking out for customized solutions for your websites? Our 
+                                            team will develop and deliver a website that’ll serve your purpose.
+                                        </span>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <div class="division">
+                                <section class="card"> 
+                                    <div class="icon-seven">
+                                       <img src="img/gift-box.png">
+                                    </div>
+                                    
+                                    <div class="text_icon ">
+                                        <h4>Corporate Gifting</h4>
+                                        <span>Looking out for customized solutions for your websites? Our 
+                                            team will develop and deliver a website that’ll serve your purpose.
+                                        </span>
+                                    </div>
+                                </section> 
+                                
+                                <section class="card"> 
+                                    <div class="icon-eight">
+                                        <img src="img/management.png">
+                                    </div>
+                                    <div class="text_icon ">
+                                        <h4>Event Management</h4>
+                                        <span>Our web design team has ample years of experience in the 
+                                            core areas of design to build a website that you need.
+                                        </span>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="services_bottom">
+                            <p>We help take your small business to the next level. <a href="#">ALL SERVICES</a></p>
+                        </div>
+                    </div>
+
+                    <div class="swiper mySwiper opnion_client">
+                        <div class="swiper-wrapper opnion_slider">
+
+                            <div class="swiper-slide opnion_slide">
+                                <div class="slide_left">
+                                    <div class="opnion_img">
+                                        <img src="img/icon-client/customer-1.jpg">
+                                    </div>
+                                </div>
+                                <div class="slide_right">
+                                    <div class="slide_text_top">
+                                        <h4>Testimonials</h4>
+                                        <h2>Customer Feedback</h2>
+                                    </div>
+                                    <div class="slide_text_bottom">
+    
+                                        <img src="img/rating (1).png" alt="star">
+                                        <p>Malesuada imperdiet commodo nostra taciti neque arcu in sem a vivamus tempor ac sem<br>
+                                             convallis ullamcorper acer enims massa massa porta interdum to nullam nis augue done<br>
+                                             leo ut fermentum senectus eget. Metusi lacinia turpis potenti in aliquet ipsum primis and<br>
+                                             pede volutpat.Feugiat to hymenaeos facilisis erat morbi libero to sociosqu inte dum justo<br>
+                                             sagittis feugiat astron make facilisis morb.</p>
+    
+                                        <div class="slide_name_bottom"><h4>Mark Hoffman - </h4><span>CEO, Meghna Group</span></div>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="swiper-slide opnion_slide">
+                                <div class="slide_left">
+                                    <div class="opnion_img">
+                                        <img src="img/icon-client/customer-4.jpg">
+                                    </div>
+                                </div>
+                                <div class="slide_right">
+                                    <div class="slide_text_top">
+                                        <h4>Testimonials</h4>
+                                        <h2>Customer Feedback</h2>
+                                    </div>
+                                    <div class="slide_text_bottom">
+    
+                                        <img src="img/rating (1).png" alt="star">
+                                        <p>Malesuada imperdiet commodo nostra taciti neque arcu in sem a vivamus tempor ac sem<br>
+                                             convallis ullamcorper acer enims massa massa porta interdum to nullam nis augue done<br>
+                                             leo ut fermentum senectus eget. Metusi lacinia turpis potenti in aliquet ipsum primis and<br>
+                                             pede volutpat.Feugiat to hymenaeos facilisis erat morbi libero to sociosqu inte dum justo<br>
+                                             sagittis feugiat astron make facilisis morb.</p>
+    
+                                        <div class="slide_name_bottom"><h4>Daniel johnson - </h4><span>CEO, Meghna Group</span></div>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="swiper-slide opnion_slide">
+                                <div class="slide_left">
+                                    <div class="opnion_img">
+                                        <img src="img/icon-client/customer-3.jpg">
+                                    </div>
+                                </div>
+                                <div class="slide_right">
+                                    <div class="slide_text_top">
+                                        <h4>Testimonials</h4>
+                                        <h2>Customer Feedback</h2>
+                                    </div>
+                                    <div class="slide_text_bottom">
+    
+                                        <img src="img/rating (1).png" alt="star">
+                                        <p>Malesuada imperdiet commodo nostra taciti neque arcu in sem a vivamus tempor ac sem<br>
+                                             convallis ullamcorper acer enims massa massa porta interdum to nullam nis augue done<br>
+                                             leo ut fermentum senectus eget. Metusi lacinia turpis potenti in aliquet ipsum primis and<br>
+                                             pede volutpat.Feugiat to hymenaeos facilisis erat morbi libero to sociosqu inte dum justo<br>
+                                             sagittis feugiat astron make facilisis morb.</p>
+    
+                                        <div class="slide_name_bottom"><h4>Pricilia Doe - </h4><span>CEO, Meghna Group</span></div>
+                                    </div>
+                                </div> 
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="need">
+                        <div class="need_left">
+                            <h2>Need Design Solution<br>
+                                For your Brand</h2>
+                        </div>
+                        <div class="need_right">
+                            <p>Extra support</p>
+                            <div class="need_button">
+                                <div class="need_icon"><i class="fa-solid fa-arrow-right"></div></i><a href="#">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="send">
+                        <div class="send_left">
+                            <div>
+                                <iframe class="send-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12130.206437277497!2d10.974813847503084!3d50.27210510432294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a3ce4642c744cd%3A0x46d34c9b7a7c5827!2sMcDonald&#39;s!5e0!3m2!1spt-BR!2sbr!4v1647969716630!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                        <div class="send_right">
+                            <h4 class="send-subtitle">Send Message</h4>
+                            <h2 class="send-title">Get in Touch</h2>
+                            <div class="send-forms">
+                                <form action="https://formsubmit.co/usetextpeople@gmail.com" method="post">
+                                    <div class="field">
+                                        <input type="text" name="name" placeholder="Your Name" required>
+                                        
+                                    </div>
+                                    <div class="field">
+                                        <input type="email" name="email" placeholder="E-mail Adress" required>
+                                        
+                                    </div>
+                                    <div class="field" >
+                                        <textarea name="message" placeholder="Message" required></textarea>
+                                    </div>
+
+                                    <button class="send_button" type="submit">
+                                        <div class="about_icon"><i class="fa-solid fa-arrow-right"></div></i><a href="#">CONTACT US</a>
+                                    </button>
+
+                                    <input type="hidden" name="_cc" value=" alvesjp1615@gmail.com ">
+                                    <input type="hidden" name="_captcha" value="false">
+                                    <input type="hidden" name="_subject" value="New text">
+                                </form>
+                                
+                                <input type="hidden" name="_cc" value=" alvesjp1615@gmail.com ">
+                                <input type="hidden" name="_captcha" value="false">
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="client">
-                        <a class="client_text">Our Clients</a>
-
                         <div class="clientele">
-                            <div class="division_client_left">
-                                <div class="clientele_logo">
-                                    <a href=""> <img src="img/logo_client/Inframandi.png"> </a>
-                                </div>
-                                <div class="clientele_logo">
-                                    <a href=""> <img src="img/logo_client/Livedtrip.png" alt=""> </a>
-                                </div>
+                            <div class="clientele_logo">
+                                <a href=""> <img src="img/logo_client/Inframandi.png"> </a>
                             </div>
-
-                            <div class="division_client right">
-                                <div class="clientele_logo">
-                                    <a href=""> <img src="img/logo_client/Rony Enterprise.png" alt=""> </a>
-                                </div>
-                                <div class="clientele_logo">
-                                    <a href=""> <img src="img/logo_client/Speaking Mirror.png" alt=""> </a>
-                                </div>
+                            <div class="clientele_logo">
+                                <a href=""> <img src="img/logo_client/Livedtrip.png" alt=""> </a>
                             </div>
+                            <div class="clientele_logo">
+                                <a href=""> <img src="img/logo_client/Rony Enterprise.png" alt=""> </a>
+                            </div>
+                            <div class="clientele_logo">
+                                <a href=""> <img src="img/logo_client/Speaking Mirror.png" alt=""> </a>
+                            </div>
+                            
+                            
                         </div>
                     </div>
+                    
                 </div>
             </div>
         <div class="foot">
@@ -249,9 +412,9 @@
                             <nav>
                                 <ul>
                                     <li><a href="home.html">HOME</a></li>
-                                    <li id="foot_text"><a href="">ABOUT</a></li>
-                                    <li id="foot_text"><a href="">PRINTING</a></li>
-                                    <li id="foot_text"><a href="">DESIGNING</a></li>
+                                    <li id="foot_text"><a href="about.html">ABOUT</a></li>
+                                    <li id="foot_text"><a href="printing.html">PRINTING</a></li>
+                                    <li id="foot_text"><a href="designing.html">DESIGNING</a></li>
                                     <li id="foot_text"><a href="contact.html">CONTACT</a></li>
                                     <li id="foot_text"><a href="">Get a Quote</a></li>
                                 </ul>
@@ -266,5 +429,34 @@
                 </div>
             </footer>
         </div>
+        <div class="foot-copy">
+            <div class="copy-text">
+                <p>Copyright © <a>Theme Pure.</a> All Rights Reserved.</p>
+            </div>
+            <div class="copy-social">
+                
+            </div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+        </script>
+
+        
     </body>
 </html>
