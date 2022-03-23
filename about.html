@@ -1,137 +1,103 @@
 <html>
-    <html>
     <head>
+        <title>SimplBusiness</title>
+        <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
         <script defer src="https://use.fontawesome.com/releases/v6.0.0/js/all.js" integrity="sha384-l+HksIGR+lyuyBo1+1zCBSRt6v4yklWu7RbG0Cv+jDLDD9WFcEIwZLHioVB4Wkau" crossorigin="anonymous"></script>
-    </head>
+    </head>  
     <body>
         <div id="head">
             <header>
                 <div class="head_top">
-                    <nav>
-                        <a href="#"><i class="fa-brands fa-facebook" style="color: black;"></i></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram" style="color: black;"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube" style="color: black;"></i></a>
+                    <nav class="top-left">
+                        <a href="#" id="head_icon"><i class="fa-solid fa-phone-volume"></i> +2 (202) 588-6500</a>
+                        <a href="#" style="padding-left: 30px;"><i class="fa-thin fa-envelope-open"></i>simplbusinessideas@gmail.com</a>
                     </nav>
+                    <div class="top-right">
+                        <a href="#"><i class="fa-brands fa-facebook-f" style="color: #0c2957; font-size: 15px; padding-top: 12px;"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram" style="color: #0c2957; font-size: 15px; padding-top: 12px;"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube" style="color: #0c2957; font-size: 15px; padding-top: 12px;"></i></a>
+                    </div>
                 </div>
                 <div class="head_bottom">
-                   
+                
                     <nav>
-                        <img src="img/logo.png" alt="logo" width="180" height="60">
+                        <a href="home.html">
+                            <img src="img/logo.png" alt="logo" width="180" height="60">
+                        </a>
                         <input type="checkbox" id="check">
                         <label for="check" class="checkbtn">
                             <i class="fas fa-bars"></i>
                         </label> 
                         <ul class="menu">
-                            <li><a href="home.html">HOME</a></li>
-                            <li><a href="about.html">ABOUT</a></li>
-                            <li><a href="printing.html">PRINTING</a></li>
-                            <li><a href="designing.html">DESIGNING</a></li>
-                            <li><a href="contact.html">CONTACT</a></li>
-                            <li><a id="quote_button">Get a Quote</a></li>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="printing.html">Printing</a></li>
+                            <li><a href="designing.html">Designing</a></li>
+                            <li><a href="designing.html">Project</a></li>
+                            <li><a href="contact.html">Conctact</a></li>
+                            <li><a id="quote_button">GET A QUOTE</a></li>
                         </ul>
                     </nav>
                 </div>
             </header>
-        </div> 
+        </div>    
         <div class="container">
             <div class="about_page">
                 
                 <section class="parallax">
                     <div>
                         <div class="titles">
-                            <a>About us</a>
+                            <h2>About us</h2>
                         </div>
                     </div>
-                </section> 
-                
-                <div class="about_values">
-                    <div class="values_left">
-                        <div class="about_img">
-                            <img src="img/about_us2.jpg" alt="about_us2">
-                        </div>
-                    </div>
-                    <div class="values_right">
-                        <h4>We are a team of 40 web experts with over 12 years of experience in<br> 
-                            website building and marketing to help businesses grow online.
-                        </h4>
-                        <h4>If you are looking for the best website design, development, and <br> 
-                            marketing services to grow your business online, we are here to help. <br>
-                            We are a team of certified experts with tremendous experience in web<br>
-                            design, development, and marketing who’ll walk with you all through.
-                        </h4>
-                        <h1> Our Core Values</h1>
-                        <nav>
-                            <ul class="values_list">
-                                <li><i aria-hidden="true" class="fas fa-minus"></i><a>Committed to delivering the best</a></li>
-                                <li><i aria-hidden="true" class="fas fa-minus"></i><a>Honest and transparent services</a></li>
-                                <li><i aria-hidden="true" class="fas fa-minus"></i><a>We care for your business just like ours</a></li>
-                                <li><i aria-hidden="true" class="fas fa-minus"></i><a>Keep learning and adapting to new technologies</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-
-                <div class="about_say">
-                    <div class="say_title">
-                        <a>What Our Clients Say</a>
-                    </div>
-                    <div class="say_coments">
-                        <div class="say_cards">
-                            <img src="img/rating.png" alt="rating" id="star">
-                            <span>Dapibus id interdum fusce sed odio massa tellus nibh consequat justo mauris,<br> donec nec tempus iaculis pellente.</span>
-                            <div class="say_user"><img src="img/user.png" alt="say_user" id="user"><a>Pricilia Doe</a></div>
-                        </div>
-                    </div>
-                </div>         
+                </section>   
             </div>
         </div>        
         <div class="foot">
             <footer>
-                <div class="foot_left">
+                <div class="foot_one">
                     <div class="foot_img">
                         <img src="img/logo_invert.jpeg" alt="">
                     </div>
-                    <div class="foot_text_left">
-                        <div class="foot_span">
-                            <span>132, Keshab Chandra Sen Street Near Amhesrt Street Police Station</span>
-                        </div>
-                        <div class="foot_span">
-                            <span>Kolkata – 700 009</span><br>
-                        </div>
-                        <div class="foot_span">
-                            <span>simplbusinessideas@gmail.com</span>
-                        </div>
-                        
-                    </div>
                 </div>
-                <div class="foot_right">
-                    <div></div>
-                    <div>
-                        <div class="foot_menu">
-                            <nav>
-                                <ul>
-                                    <li><a href="home.html">HOME</a></li>
-                                    <li id="foot_text"><a href="about.html">ABOUT</a></li>
-                                    <li id="foot_text"><a href="printing.html">PRINTING</a></li>
-                                    <li id="foot_text"><a href="designing.html">DESIGNING</a></li>
-                                    <li id="foot_text"><a href="contact.html">CONTACT</a></li>
-                                    <li id="foot_text"><a href="">Get a Quote</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="foot_social">
-                            <a href="#"><i class="fa-brands fa-facebook" style="color: white;"></i></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram" style="color: white;"></i></a>
-                            <a href="#"><i class="fa-brands fa-youtube" style="color: white;"></i></a>
-                        </div>
-                    </div>  
+                <div class="foot_second">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="">Printing Solutions</a></li>
+                        <li><a href="">Corporate Gifting</a></li>
+                        <li><a href="">Event Management</a></li>
+                        <li><a href="">Digital Marketing</a></li>
+                        <li><a href="">Packaging Solution</a></li>
+                    </ul>
+                </div>
+                    
+                <div class="foot_three">
+                    <h4>Recent News</h4>
+                    <li><a href="">Printing Solutions</a></li>
+                    <li><a href="">Corporate Gifting</a></li>
+                    <li><a href="">Event Management</a></li>
+                    <li><a href="">Digital Marketing</a></li>
+                    <li><a href="">Packaging Solution</a></li>
+                </div>
+                <div class="foot_four">
+
                 </div>
             </footer>
+        </div>
+        <div class="foot-copy">
+            <div class="copy-text">
+                <p>Copyright © <a>SimplBusiness.</a> All Rights Reserved.</p>
+            </div>
+            <div class="copy-social">
+                <a href="#"><i class="fa-brands fa-facebook-f" style="color: white; font-size: 20px; padding-top: 11px;"></i></i></a>
+                <a href="#"><i class="fa-brands fa-instagram" style="color: white; font-size: 20px; padding-top: 11px;"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube" style="color: white; font-size: 20px; padding-top: 11px;"></i></a>
+            </div>
         </div>
     </body>
 </html>

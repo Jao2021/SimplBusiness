@@ -69,7 +69,7 @@ header{
 }
 .head_top .top-left a{
     text-decoration: none;
-    color: #FD4A36;
+    color: #0c2957;
 }
 
 .head_top #head_icon{
@@ -81,13 +81,36 @@ header{
 
 
 .head_top .top-right{
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Rubik',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6b727e;
     padding-top: 20px;
 }
 
 .head_top .top-right a{
-    text-decoration: none;
-    margin-left: 15px;
+    margin-left: 12px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    font-size: 15px;
+    background: white;
 }
+
+.top-right a:hover{
+    background-color: #FD4A36;
+    transition: 0.3s;
+}
+
+.top-right a i:hover{
+    color: white;
+}
+
 
 
 
@@ -765,38 +788,142 @@ header{
 
     /*----opnion_end----*/
 
-    /*----clients----*/
+    /*----price----*/
 
-.client{
-    padding-bottom: 45px;
-    width: 100%;
+.price{
+    margin-top: 100px;
+    margin-left: 164px;
+    margin-right: 164px;
 }
 
-.clientele{
-    padding: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+.price .sub-title{
+    font-size: 20px;
+    font-family: Rubik,sans-serif;
+    color: #fd4a36;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: capitalize;
+    
+}
+
+.price .price_title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    line-height: 65px;
+    font-weight: 800;
+    color: #0C2957;
+    margin-top: 0px;
+}
+
+.price .price-cards{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.price-cards .price-box{
+    width: 407px;
+    height: 631px;
+    align-items: center;
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 10px;
+    padding-right: 0px;
+    padding-bottom: 0px;
 }
 
 
-.clientele .clientele_logo{
-    margin-left: 20px;
+.price-box .price-card{
+    width: 395px;
+    height: 619px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #ddd;
 }
 
-.clientele img{
-    height: 120px;
-    width: 320px;
-    -webkit-filter: grayscale(100%);
+.price-card .price_top-text{
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-right: 2px;
+    padding: 28px 0 10px;
 }
 
-.clientele img:hover{
-    -webkit-filter: grayscale(0%);
-    transition: 0.5s;
+.price_top-text h2{
+    font-weight: 700;
+    font-size: 36px;
+    color: #0c2957;
+    margin: 0;
+    line-height: 1.4;
+    font-family: Montserrat,sans-serif;
 }
 
-   /*----clients_end----*/
+.price_top-text h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6b727e;
+    font-family: Rubik,sans-serif;
+    margin-top: 5px;
+}
+
+.price-card .price-princing{
+    padding: 17px 0;
+    width: 100%;
+    background: #f7f7f7;
+    position: relative;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.price-princing h2{
+    font-size: 40px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    font-weight: 700;
+    color: #0c2957;
+    margin: 0;
+    line-height: 1.4;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.price-card .price-list{
+    padding: 43px 0;
+    background: #fff;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.price-list li{
+    margin-bottom: 10px;
+    color: #6b727e;
+    font-family: Rubik,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.price-card .price-buttom{
+    margin-bottom: 35px;
+    background-color: #f7f7f7;
+    border: 1px solid #e3e4e6;
+    color: #0c2957;
+    display: inline-block;
+    padding: 21px 31px;
+    border-radius: 40px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.price-buttom span{
+    margin-right: 5px;
+    color: #fd4a36;
+}
+
+
+    /*----price----*/
+
 
    /*----need----*/
 .need{
@@ -1056,6 +1183,41 @@ header{
     transition: 0.3s;
 }
   /*----send_end----*/
+
+  
+    /*----clients----*/
+
+.client{
+    padding-bottom: 45px;
+    margin-top: 80px;
+    width: 100%;
+}
+
+.clientele{
+    padding: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.clientele .clientele_logo{
+    margin-left: 20px;
+}
+
+.clientele img{
+    height: 120px;
+    width: 320px;
+    -webkit-filter: grayscale(100%);
+}
+
+.clientele img:hover{
+    -webkit-filter: grayscale(0%);
+    transition: 0.5s;
+}
+
+   /*----clients_end----*/
    
 
         /*----PAGE_HOME_END----*/
@@ -1079,67 +1241,13 @@ header{
     padding-left: 115;
 }
 
-.titles a{
+.titles h2{
     color:white;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-weight: 900;
     font-size: 80px;
-}
-
-.about_page .about_values{
-    height: 600px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #3447A3;
-}
-
-.about_values .values_left{
-    height: 20%;
-    width: 60%;
-    padding-left: 110px;
-    padding-top: 100px;
-    text-align: end;
-}
-
-.about_img img{
-    width: 80%;
-    height: 550px;
-}
-
-.about_values .values_right{
-    padding-right: 130px;
-    padding-left: 80px;
-    padding-top: 100px;
-    height: 60%;
-    width: 50%;    
-    color: white;
-}
-
-.about_values .values_right h4:first-child{
-    margin-top: 0px;
-    font-weight: 700;
-}
-
-.about_values .values_right h4{
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.about_values .values_right h1{
-    padding-top: 47px;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-}
-
-.values_right .values_list li{
-    margin-bottom: 15px;
-}
-
-.values_right .values_list a{
-    padding: 15px;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Montserrat',sans-serif;
+    text-transform: uppercase;
 }
 
     /*----client----*/
